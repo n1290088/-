@@ -1,0 +1,14 @@
+div{
+    width: auto;
+    height: auto;
+    line-height: 5px;
+}
+input{
+    font-size: 30px;
+    text-align: right;
+}
+button{
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+}
