@@ -13,6 +13,10 @@ function cl(v){
 
 function calc(){
     const l = document.querySelector('input').value
-    const f = new Function('return ' + l)
-    cl(f().toString())
+    try{
+        const f = new Function('return ' + l)
+        cl(f().toString())
+    }catch(_error){
+        cl(_error)
+    }
 }
