@@ -16,7 +16,7 @@ function calc(){
     try{
         const f = new Function('return ' + l)
         cl(f().toString())
-    }catch(_error){
-        cl(_error)
+    }catch(error){
+        cl('error')
     }
 }
