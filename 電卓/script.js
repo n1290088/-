@@ -12,7 +12,7 @@ function cl(v){
 }
 
 function calc(){
-    const l = document.querySelector('input').value
+    var l = document.querySelector('input').value
     try{
         const f = new Function('return ' + l)
         cl(f().toString())
