@@ -14,7 +14,7 @@ function cl(v){
 function calc(){
     var l = document.querySelector('input').value
     try{
-        const f = new Function('return ' + l)
+        var f = new Function('return ' + l)
         cl(f().toString())
     }catch(_error){
         cl(_error)
